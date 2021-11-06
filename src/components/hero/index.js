@@ -36,7 +36,7 @@ export default function Hero() {
     <div>
       {/* <Header /> */}
       <div className="bg-gray-100 pt-40">
-        <div className="flex">
+        <div className="flex flex-col md:flex-row">
           <div className="flex-1 flex flex-col justify-end">
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -60,7 +60,7 @@ export default function Hero() {
           </div>
         </div>
         <div className="p-8 pt-0">
-          <div className="flex bg-white rounded-lg shadow-2xl">
+          <div className="flex flex-col md:flex-row bg-white rounded-lg shadow-2xl">
             {items.map(item => (
               <Item key={item.title} title={item.title} desc={item.desc} />
             ))}
