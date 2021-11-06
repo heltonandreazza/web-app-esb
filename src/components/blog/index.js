@@ -84,12 +84,10 @@ const Item = ({ img, accountant, title, desc, listItems }) => (
 
 const Blog = () => {
   return (
-    <section>
+    <section className="container mx-auto">
       <div className="flex flex-col md:flex-row pt-24">
         <div>
-          <p className="font-extrabold text-4xl leading-6 p-8">
-            Synergize resources
-          </p>
+          <p className="font-extrabold text-4xl p-8">Synergize resources</p>
           <p className="font-medium text-gray-700 leading-8 px-8  ">
             Collaboratively administrate empowered markets via plug-and-play
             maintain networks. Dynamically usable procrastinate B2B users after
