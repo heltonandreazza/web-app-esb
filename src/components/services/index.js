@@ -35,6 +35,18 @@ const items = [
   },
 ]
 
+const Item = ({ subtitle, href, hrefText, desc, img, title }) => (
+  <div className="md:w-1/2 lg:w-1/3 xl:w-1/4 pr-4">
+    <img src={img} className="rounded-2xl mt-16 md:w-80 md:h-64 " />
+    <h3 className="uppercase tracking-widest pt-8 font-medium">{subtitle}</h3>
+    <h2 className="pb-2 text-xl font-bold">{title}</h2>
+    <p className="pb-8 leading-8 pr-4">{desc}</p>
+    <a href={href} className="font-bold tracking-widest">
+      {hrefText}
+    </a>
+  </div>
+)
+
 const Services = () => {
   return (
     <section className="container mx-auto">
@@ -50,56 +62,19 @@ const Services = () => {
             Seamlessly visualize quality collaboration and idea-sharing.
           </p>
         </div>
+        {/* cards */}
         <div className="flex flex-col md:flex-row flex-wrap">
-          {items.map(({ subtitle, href, hrefText, desc, img, title }) => (
-            <div className="md:w-1/2 lg:w-1/3 xl:w-1/4 pr-4">
-              <img src={img} className="rounded-2xl mt-16 md:w-80 md:h-64 " />
-              <h3 className="uppercase tracking-widest pt-8 font-medium">
-                {subtitle}
-              </h3>
-              <h2 className="pb-2 text-xl font-bold">{title}</h2>
-              <p className="pb-8 leading-8 pr-4">{desc}</p>
-              <a href={href} className="font-bold tracking-widest">
-                {hrefText}
-              </a>
-            </div>
+          {items.map(item => (
+            <Item
+              key={item.title}
+              title={item.title}
+              subtitle={item.subtitle}
+              hrefText={item.hrefText}
+              desc={item.desc}
+              img={item.img}
+              href={item.href}
+            />
           ))}
-          {/* <div>
-            <img
-              src="http://finance.bold-themes.com/main-demo/wp-content/uploads/sites/4/2016/07/inner_1-640x480.jpg"
-              className="rounded-2xl mt-16"
-            />
-            <h3 className="uppercase tracking-widest pt-8 font-medium">
-              FIRST
-            </h3>
-            <h2 className="pb-2 text-xl font-bold ">Vision to Plan</h2>
-            <p className="pb-8 leading-8">
-              Dynamically procrastinate B2C users after installed base benefits.
-              Dramatically visualize customer directed convergence without
-              revolutionary ROI.
-            </p>
-            <a href="" className="font-bold tracking-widest">
-              LEARN MORE
-            </a>
-          </div>
-          <div>
-            <img
-              src="http://finance.bold-themes.com/main-demo/wp-content/uploads/sites/4/2016/07/inner_1-640x480.jpg"
-              className="rounded-2xl mt-16"
-            />
-            <h3 className="uppercase tracking-widest pt-8 font-medium">
-              FIRST
-            </h3>
-            <h2 className="pb-2 text-xl font-bold ">Vision to Plan</h2>
-            <p className="pb-8 leading-8">
-              Dynamically procrastinate B2C users after installed base benefits.
-              Dramatically visualize customer directed convergence without
-              revolutionary ROI.
-            </p>
-            <a href="" className="font-bold tracking-widest">
-              LEARN MORE
-            </a>
-          </div> */}
         </div>
       </div>
     </section>
