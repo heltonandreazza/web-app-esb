@@ -64,7 +64,7 @@ const Business = () => {
   return (
     <div className=" pt-4 lg:w-1/4 pb-12 lg:px-8">
       <div className="mb-4 ">
-        <h2 className="text-3xl font-bold mb-4">#bussines</h2>
+        <h2 className="text-2xl font-bold mb-4">#Bussines</h2>
         <div className="border-solid border-2 border-blue-300 rounded bg-blue-300 w-24"></div>
       </div>
       {postsBusiness.map(item => (

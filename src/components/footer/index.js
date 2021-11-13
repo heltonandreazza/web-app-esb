@@ -1,7 +1,7 @@
 import React from 'react'
 import Gallery from './gallery'
 import Business from './business'
-import Post from './postFooter'
+import PostFooter from './postFooter'
 
 const Finance = () => (
   <svg
@@ -129,7 +129,7 @@ const Footer = () => {
           {/* #bussines */}
           <Business />
           {/* recent posts */}
-          <Post />
+          <PostFooter />
         </div>
         {/* line */}
         <div className="py-4">

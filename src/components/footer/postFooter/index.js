@@ -37,9 +37,9 @@ const Content = ({ imgAlt, img, date, title }) => (
 
 const PostFooter = () => {
   return (
-    <div className="pt-4 lg:w-1/4 md:pr-4 lg:pl-4">
+    <div className="pt-4 md:pr-4 lg:pl-4">
       <div className="mb-4">
-        <h2 className="text-3xl font-bold mb-4">recent posts</h2>
+        <h2 className="text-2xl font-bold mb-4">Recent Posts</h2>
         <div className="border-solid border-2 border-blue-300 rounded bg-blue-300 w-24"></div>
       </div>
       <div className="flex flex-col">
