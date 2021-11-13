@@ -1,13 +1,13 @@
 import React from 'react'
-
 import BlogPosts from '../components/blogPosts'
+import HeroPost from '../components/blogPosts/header'
 import Footer from '../components/footer'
-import Hero from '../components/hero'
 
 const Blog = () => {
   return (
     <main>
-      <Hero />
+      <HeroPost />
+
       <BlogPosts />
       <Footer />
     </main>

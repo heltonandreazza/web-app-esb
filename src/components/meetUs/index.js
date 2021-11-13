@@ -86,7 +86,8 @@ const items = [
 ]
 
 const Item = ({ name, desc, subtitle, listItems, img }) => (
-  <div className="p-2 lex flex-col  md:w-1/2 lg:w-1/3 xl:w-1/4  mb-4">
+
+  <div className="p-2 flex flex-col  md:w-1/2 lg:w-1/3 xl:w-1/4  mb-4">
     <div className=" py-8 bg-white rounded-xl shadow-2xl flex flex-col items-center">
       <div className="pb-8">
         <img src={img} alt="photo" className="rounded-full" />
@@ -109,20 +110,24 @@ const Item = ({ name, desc, subtitle, listItems, img }) => (
 
 const MeetUs = () => {
   return (
-    <section className="bg-meetUs bg-top md:px-8 py-16 bg-no-repeat bg-top">
+
+    <section className="bg-meetUs bg-top md:px-8 py-16 bg-no-repeat">
       <div className=" p-4 md:p-8 w container mx-auto">
         {/* introduction */}
         <div className=" flex flex-col items-center">
-          <h3 className="pt-8 pb-2 tracking-widest uppercase"> Meet Us</h3>
-          <h2 className="font-bold text-4xl pb-4">The Crew</h2>
-          <p className="text-center	pb-16 leading-8">
+          <h3 className="pt-8 pb-2 tracking-widest uppercase text-xl">
+            Meet Us
+          </h3>
+          <h2 className="pb-2 font-extrabold text-4xl md:text-5xl">The Crew</h2>
+          <p className="text-center	pb-16 leading-8 md:text-xl">
             Override the digital divide with additional clickthroughs from
             DevOps.
           </p>
         </div>
         {/* cards */}
         <div className="flex flex-col md:flex-row flex-wrap">
-          {items.map((item) => (
+
+          {items.map(item => (
             <Item
               key={item.name}
               name={item.name}
