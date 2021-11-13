@@ -39,7 +39,7 @@ const Gallery = () => {
   return (
     <div className="pb-12 pt-4 lg:w-1/4 lg:px-8 xl:px-6 ">
       <div className="mb-4 ">
-        <h2 className="text-3xl font-bold mb-4">gallery</h2>
+        <h2 className="text-2xl font-bold mb-4">Gallery</h2>
         <div className="border-solid border-2 border-blue-300 rounded bg-blue-300 w-24"></div>
       </div>
       <div className="flex flex-col sm:flex-row items-center sm:justify-between sm:flex-wrap">

@@ -110,8 +110,7 @@ const Item = ({ name, desc, subtitle, listItems, img }) => (
 
 const MeetUs = () => {
   return (
-
-    <section className="bg-meetUs bg-top md:px-8 py-16 bg-no-repeat">
+    <section className="bg-meetUs 2xl:bg-cover bg-top md:px-8 py-16 bg-no-repeat">
       <div className=" p-4 md:p-8 w container mx-auto">
         {/* introduction */}
         <div className=" flex flex-col items-center">
