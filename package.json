@@ -21,7 +21,7 @@
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "gatsby clean && gastby build",
+    "build": "gatsby clean && gatsby build",
     "start": "gatsby develop"
   },
   "repository": {
